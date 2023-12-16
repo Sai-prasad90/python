@@ -1,6 +1,4 @@
 #list comprehension
-
-
 # Table of Four
 x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 tableOfFour = [item * 4 for item in x]
@@ -51,4 +49,3 @@ even = ["eeven"if  item % 2 == 0  else "odd" for item in numbersB]
 print(even)
 
 
-#[expression loop condition]

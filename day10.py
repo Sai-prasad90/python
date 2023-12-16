@@ -1,56 +1,75 @@
-# program 1
+#Membership Operators:
+#   - In (in)
+#   - Not in (not in)
+# Case sensitive
 
-birthYear = [1989, 1990, 1991, 1992]
-ages = []
-for x in range(len(birthYear)):
-    print(x) # 0 1 2 3
-    print(birthYear[x])     # Print the birth year
-    print(2023 - birthYear[x])
-    x = 2023 - birthYear[x] # Update the loop variable x with the calculated age
-    ages.append(x) # Append the age to the ages list
-print(ages)# Print the list of ages 34  33 2
+list_vo = ['A', 'E', 'I', 'O', 'U']
 
-# program 2
+
+print("a" in list_vo)  # Output: False
+
+print("A" in list_vo)  # Output: True
+
+print("z" in list_vo)  # Output: False
+
+print("a" not in list_vo)  # Output: True
+
+print("z" not in list_vo)  # Output: True
+
+print("A" not in list_vo)  # Output: False
+
+
+
+
+# boolean o/p of data types
+
+# Output for the given programs:
+
+print(1)                #  1
+print(type(1))          # Output: <class 'int'>
+print(bool(1))          # Output: True
+
+print(0)                # Output: 0
+print(type(0))          # Output: <class 'int'>
+print(bool(0))          # Output: False only for ZERO is an INTEGER
+
+print(3)                # Output: 3
+print(type(3))          # Output: <class 'int'>
+print(bool(3))          # Output: True
+
+print('0')              # Output: 0
+print(type('0'))        # Output: <class 'str'>
+print(bool('0'))        # Output: True
+
+print(bool(True))       #True
+print(bool(False))      # False
+
+print(bool(''))         #False Empty will always be FALSE
+print(bool(' '))        #True space is there
+
+print(bool([1,2,3]))     #True
+print(bool([0,0,0]))     #True
+print(bool([0]))         #True because it array is not empty ?
+print(bool([]))          # False Empty will always be FALSE
+
+print(bool((1,2,3)))     # True
+print(bool((1)))         # True
+
+print(bool((0)))         # False as it's an INTEGER ZERO
+
+print(bool((5-5)))        #False in arithmacit
+print(bool((True-True)))  #False True - True results in 0
+
+
+# print(bool((0,)))        # True (TRUE as it's a TUPLE)
+# print(type((0,)))        # tuple (TRUE as it's a TUPLE)
 #
+# print(bool(0))           # Output: False (FALSE as it's an INTEGER ZERO)
+# print(bool(00))          # Output: False (FALSE as it's an INTEGER ZERO)
+# print(bool(0.0))         # Output: False (FALSE as it's an INTEGER ZERO)
 #
-marks = [34, 55, 66, 7, 2, 44, 55, 66, 99, 77]
-
-above50 = [] # Empty list to store marks above 5
-
-# Loop through each element in the marks list
-for item in marks:
-    # Check if the mark is above 50
-    if item > 50:
-        # Append the mark to the above50 list
-        above50.append(item)
-
-# Print the list of marks above 50
-print(above50)  #55 66 55 66 99 77
-
-
-
+# print(bool((0,0)))       # Output: True (TRUE as it's a tuple with elements)
+# print(bool(()))          # Output: False (Empty will always be FALSE)
 #
-# # program 3
-
-
-totals = [11, 22, 33]
-# Variable to store the sum
-sum = 0
-# Loop through each element in the totals list
-for item in totals:
-    # Add the item to the sum
-    sum = sum + item
-# Print the sum
-print(sum) #66
-#
-#
-# # program 4
-#
-#
-# cities = ["ahemdabad", "banglore", "chennai"]
-#
-# # Loop through each element in the cities list
-# for item in cities:
-#     # Print a welcome message for each city
-#     print("welcome " + item)
-#
+# print(bool(False))       # Output: False
+# print(bool((False,False)))# Output: True
