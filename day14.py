@@ -45,7 +45,7 @@ even = ["even" for item in numbersB if item % 2 == 0]
 print(even)  # ['even', 'even']
 
 numbersB = [33, 444, 5, 6 ,21 , 22 ,66 ]
-even = ["eeven"if  item % 2 == 0  else "odd" for item in numbersB]
+even = ["even"if  item % 2 == 0  else "odd" for item in numbersB]
 print(even)
 
 

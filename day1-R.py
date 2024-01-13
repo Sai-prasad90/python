@@ -26,3 +26,21 @@ print("It's my book") #corrected
 gandhi = 'gandhiji said,"you must speak truth"'
 print('gandhiji said,"you must speak truth"') #corrected
 print(type(gandhi))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
